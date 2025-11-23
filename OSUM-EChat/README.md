@@ -283,4 +283,24 @@ Coming soon.
 
 ### Training
 
-Coming soon.
+To ensure a smooth training workflow, please adhere to the following steps and requirements:
+
+#### 1. Data Preparation
+
+During data preparation, three methods can be utilized: **raw**, **shard**, or **combine**.
+
+> **Recommendation:** Prioritize using the **shard** method.
+
+Upon completion of data preparation, the generated **data manifest (or data index)** must be written to the specified configuration file:
+
+```yaml
+OSUM-EChat/conf/data_tmp.yaml
+```
+
+#### 2. Training Execution
+
+Execute the following primary script to launch the training task:
+
+```bash
+OSUM-EChat/train.sh
+```

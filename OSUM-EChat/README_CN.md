@@ -235,4 +235,25 @@ bash infer_with_shards_or_raw.sh
 即将开放
 
 ### 训练
-即将开放
+
+为确保训练流程顺利进行，请遵循以下步骤和要求：
+
+#### 1. 数据准备
+
+数据准备时，可采用 **raw**、 **shard** 或 **combine** 三种方式。
+
+> **建议：** 优先采用 **shard** 方式。
+
+数据准备完成后，必须将生成的 **数据清单（或数据索引）** 写入指定配置文件：
+
+```yaml
+OSUM-EChat/conf/data_tmp.yaml
+```
+
+#### 2. 训练启动 (Training Execution)
+
+请运行以下主脚本启动训练任务：
+
+```bash
+OSUM-EChat/train.sh
+```
